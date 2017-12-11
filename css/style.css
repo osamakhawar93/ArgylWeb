@@ -661,7 +661,7 @@ textarea{
 }
 
 #first,#second,#third,#fourth,#fifth{
-    opacity: 0;
+  /*   opacity: 0; */
 }
 .custom-inputs{
     border:none;
@@ -1282,8 +1282,25 @@ footer{
 .wash{
     width: 300px;margin-top: -4px;
 }
+
+@media only screen and (max-width:1300px) and (min-width:1200px){
+    .text-row{
+        padding-top:150px;
+    }
+    .copyrights{
+        width:auto;
+    }
+
+    footer{
+        width:85%;
+        margin-left:5%;
+    }
+}
 @media only screen and (max-width: 1200px) and (min-width: 992px){
 
+    .news img{
+        width: 160px;
+    }
     .absolute-left-div,.absolute-right-div,.absolute-roadmap,.left-space{
         display:none;
     }
