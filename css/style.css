@@ -373,7 +373,7 @@ a,p,label,span,li,div,h1,h2,h3,h4{
 }
 
 .background{
-    background: url("../img/bg.gif");
+    background: url("../img/optimized.gif");
     background-repeat: no-repeat;
     background-size: cover;
     min-height:100vh;
@@ -1133,6 +1133,10 @@ width: 240px;
 }
 .footer-end{
     position: relative;
+}
+
+.contact-form{
+    margin-top:50px
 }
 .footer-end .right-space{
     width:100%;
