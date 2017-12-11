@@ -1,0 +1,52 @@
+/*!
+ * Start Bootstrap - Full Slider (https://startbootstrap.com/template-overviews/full-slider)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-slider/blob/master/LICENSE)
+ */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators{
+	
+	top: 0;
+	  bottom: 0;
+	  margin: auto;
+	  height: 2%;
+  
+	position: absolute !important;
+    right: 100px !important;
+    z-index: 15 !important;
+	left:auto !important;
+    display: block !important;
+    -ms-flex-pack: right !important;
+    justify-content: right !important;
+    padding-left: 0;
+  
+    list-style: none;
+	
+}
+
+.carousel-indicators li{
+	margin-bottom:15px;
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	text-align:center;
+}
+
+.carousel-indicators .active{
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	text-align:center;
+	background:transparent;
+	border:2px solid white;
+}
