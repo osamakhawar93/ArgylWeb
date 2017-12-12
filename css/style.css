@@ -1282,7 +1282,11 @@ footer{
 .wash{
     width: 300px;margin-top: -4px;
 }
-
+@media only screen and (max-width:1400px) and (min-width:1300px){
+	.text-row{
+		padding-top:250px;
+	}
+}
 @media only screen and (max-width:1300px) and (min-width:1200px){
     .text-row{
         padding-top:150px;
@@ -1295,7 +1299,34 @@ footer{
         width:85%;
         margin-left:5%;
     }
+	.different-kind{
+		padding-left:140px;
+		padding-right:140px;
+	}
+	
+	.dp{
+		width:210px;
+		height:210px;
+	}
+	.dp img{
+		height:210px;
+	}
+	
+	.left-rounded{
+		width:380px;
+		height:380px;
+	}
+	
+	.testimonial-image{
+		height:380px;
+	}
+	
+	.left-icons{
+			margin-right:20px;
+	}
 }
+
+
 @media only screen and (max-width: 1200px) and (min-width: 992px){
 
     .news img{
