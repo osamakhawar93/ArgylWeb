@@ -1498,8 +1498,8 @@ footer{
         display:none;
     }
 
-    .left-section,.right-section{
-        width:100%;
+    #what-why .left-section,#what-why .right-section{
+        width:50%;
     }
 
     .image-box{
@@ -1523,15 +1523,38 @@ footer{
 }
 
 @media only screen and (max-width: 640px){
-
-    .text-div{
+	
+	.social-icons-fa li{
+			margin-right:10px;
+	}
+    .text-div{	
         padding:0 10px;
     }
 
     .navbar-toggler{
         border:1px solid #ccc;
+		    margin-right: 20px;
+			margin-top: -10px;
     }
-
+	
+	.scroller{
+		display:none;
+	}
+	
+	.whitepaper{
+		    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+	}
+	
+	.left-icons,.right-icons{
+		width:50%;
+	}
+	
+	.icon-row{
+		margin-top:50px;
+	}
     .absolute-left-div,.absolute-right-div,.absolute-roadmap,.left-space{
         display:none;
     }
@@ -1599,15 +1622,20 @@ footer{
     }
 
     .dashed{
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg) !important;
+        -moz-transform: rotate(90deg)!important;
+        -o-transform: rotate(90deg) !important;
+        -ms-transform: rotate(90deg) !important;
+        transform: rotate(90deg) !important;
         opacity:1;
         width:20%;
         margin-left: 54%;
     }
+	
+	.right-space{
+		    width: 100% !important;
+			padding-left: 0;
+	}
     .heading-investors{
         text-align:center;
     }
