@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $("#member-2,#member-3,#member-4,#testimonial-4,#testimonial-3,#testimonial-2").hide();
     AOS.init();
     $(".owl-carousel").owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -135,4 +135,24 @@ function removeAnimations(){
             });
         });
     });
+}
+
+
+function showFirstProfile(elem){
+
+    $(".members").hide();
+    $(".col-lg-3 .dp").removeClass("activeBox");
+    $(".mem-"+elem).find(".dp").addClass("activeBox");
+    $("#member-"+elem).show();
+    $("#member-"+elem);
+
+}
+
+
+function testimonialBy(elem){
+    $(".testimonial-list li").removeClass("active-testimonial");
+    $("#testimonialBy"+elem).addClass("active-testimonial");
+    $(".testimonial-row").hide();
+    $("#testimonial-"+elem).show();
+   
 }

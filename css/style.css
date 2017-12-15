@@ -377,8 +377,22 @@ a,p,label,span,li,div,h1,h2,h3,h4{
     background-repeat: no-repeat;
     background-size: cover;
     min-height:100vh;
+    animation: shrink 5s;
+    animation-fill-mode: forwards;
     margin-top: -115px;
+    
 }
+
+
+@keyframes shrink {
+    0% {
+      background-size: 100% 100%;
+    }
+    100% {
+      background-size: 110% 110%;
+    }
+  }
+
 
 .question{
     min-height: 292px;
@@ -973,6 +987,7 @@ position: relative;
 float: left;
 }
 
+
 .right-name{
     font-size:25px;
     font-family: 'montserratbold';
@@ -1046,11 +1061,17 @@ float: left;
     list-style-type: none;
     display: inline-block;
     margin-right: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
+.testimonial-list li:hover{
+    box-shadow: none;
+}
 .testimonial-small-img{
   max-width: 100%;
-  height: 116px;
+/*   height: 116px; */
 }
 
 .news{
@@ -1217,10 +1238,16 @@ footer{
     background: #007ab9;
     
 }
-.footer-end .left-space, .right-text{
- /*    min-height: 1100px; */
+
+
+
+.activeBox{
+    box-shadow: 0 8px 12px -1px black;
 }
 
+.active-testimonial{
+    box-shadow:none !important;
+}
 .whitepaper{
     
         border-radius: 3px;
@@ -1661,7 +1688,9 @@ footer{
     }
 
     .testimonial-list li{
-        margin-bottom:30px;
+        height:auto;
+        margin-bottom: 30px;
+        width: 40%;
     }
 
     .news img{
