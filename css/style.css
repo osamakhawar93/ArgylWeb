@@ -517,13 +517,21 @@ a,p,label,span,li,div,h1,h2,h3,h4{
 }
 
 .left-space,.left-text{
-    width:30%;
+    /* width:30%; */
+    width:20%;
 }
 
 .right-text,.right-space{
-    width:70%;
+    /* width:70%; */
+    width:80%;
     padding-top:200px;
 }
+
+.no-left-padding{
+    padding-left:0;
+
+}
+
 .blue-colored{
     background: #3754a1;
 }
@@ -1309,6 +1317,28 @@ footer{
 .wash{
     width: 300px;margin-top: -4px;
 }
+
+.desktops{
+    background: #ffffff;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    cursor: pointer;
+    border:none;
+    min-width: 180px;
+    margin-right:10px;
+    font-size:12px;
+    padding-top: 6px;
+    font-family: 'montserratsemi_bold';
+}
+
+.desktops img{
+    width:20px;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+
 @media only screen and (max-width:1400px) and (min-width:1300px){
 	.text-row{
 		padding-top:250px;
