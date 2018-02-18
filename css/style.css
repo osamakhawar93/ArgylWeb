@@ -705,6 +705,10 @@ textarea{
     color:#ed168c;
 
 }
+
+.updated:focus{
+    outline: none;
+}
 .updated{
     width:100%;
     border:2px solid white ;
@@ -1104,7 +1108,7 @@ float: left;
 
 
 .news img{
-width: 240px;
+    max-width: 100%;
 }
 .submit{
 
@@ -1769,5 +1773,57 @@ footer{
     .copyrights p{
         padding-top: 25px;
         font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    .main-navigation li a{
+        font-size: 1.1em;
+    }
+
+    .capitalize-text{
+        font-size: 3em;
+    }
+    
+    .Digital{
+        font-size:4em;
+    }
+
+    .slogan,.description{
+        font-size:1.3em;
+        line-height: 30px;
+    }
+
+    .column-text{
+        font-size: 1.1em;
+        line-height: 30px;
+
+    }
+    .question {
+        min-height: 350px;
+    }
+
+    .icon-text,.Desc-heading{
+        font-size:1.6em;
+    }
+
+    .services-text-right {
+        font-size: 1.4em;
+        line-height: 34px;
+    }
+
+    .Desc-explain{
+        font-size: 1.3em;
+        line-height: 1.8em;
+    }
+
+    .detail{
+        font-size: 1.3em;
+        line-height: 1.8em;
+    }
+
+    .testimonial-text{
+        font-size: 1.5em;
+        line-height: 1.8em;
     }
 }
