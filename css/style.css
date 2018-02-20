@@ -334,7 +334,8 @@ a,p,label,span,li,div,h1,h2,h3,h4{
 	
 }
 .main-navigation li a{
-	font-family: 'ralewaysemibold';
+    font-family: 'ralewayregular';
+    font-weight: 400;
 	font-size:14px;
 	color:white;
 	text-transform:uppercase;
@@ -490,7 +491,8 @@ a,p,label,span,li,div,h1,h2,h3,h4{
 
 .item-name p{
     font-family: 'montserratbold';
-    min-height: 391px;
+    /* min-height: 391px; */
+    min-height: 600px;
     font-size:60px;
     writing-mode: tb-rl;
     margin-right: -20px;
@@ -685,6 +687,23 @@ textarea{
 #first,#second,#third,#fourth,#fifth{
   /*   opacity: 0; */
 }
+
+
+html::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  
+}
+ 
+html::-webkit-scrollbar-thumb {
+  
+    background-color:#ed168c;
+    -webkit-box-shadow: inset 0 0 6px #ed168c; 
+}
+
 .custom-inputs{
     border:none;
     border-bottom:1px solid white;
@@ -699,6 +718,11 @@ textarea{
     -o-transition: border-bottom 100ms ease-out 1s;
     transition: border-bottom 100ms ease-out 1s;
 }
+
+.custom-inputs:focus{
+    outline:none !important;
+}
+
 .updated:hover{
 
     background:white;
@@ -1060,7 +1084,8 @@ float: left;
 }
 
 .testimonial-text{
-    font-family: 'ralewaysemibold';
+    font-family: 'ralewayregular';
+    font-weight: 400;
     font-style: italic;
     margin-top:100px;
 }
@@ -1404,6 +1429,10 @@ footer{
 
     .right-text{
         width:100%;
+    }
+
+    .main-navigation li {
+        padding-right: 30px;
     }
 
     .heading-investors{
@@ -1790,7 +1819,7 @@ footer{
 
     #navbarResponsive{
         position: absolute;
-        top:150px;
+        top:100px;
         right:0;
     }
 
@@ -1928,12 +1957,21 @@ footer{
 }
 
 @media only screen and (min-width:1900px) {
-    .main-navigation li a{
-        font-size: 1.1em;
+
+    .container {
+        max-width: 1400px;
+    }
+
+    .what-is-argyle{
+        min-height:450px !important;
+    }
+
+    .main-navigation li a {
+    font-size: 1.4em;
     }
 
     .capitalize-text{
-        font-size: 3em;
+        font-size: 4em;
     }
     
     .Digital{
@@ -1941,17 +1979,18 @@ footer{
     }
 
     .slogan,.description{
-        font-size:1.3em;
-        line-height: 30px;
+        font-size: 1.4em;
+        line-height: 45px;
     }
 
     .column-text{
-        font-size: 1.1em;
-        line-height: 30px;
+        font-size: 1.4em;
+    line-height: 40px;
+
 
     }
     .question {
-        min-height: 350px;
+        min-height: 220px;
     }
 
     .icon-text,.Desc-heading{
@@ -1969,12 +2008,24 @@ footer{
     }
 
     .detail{
-        font-size: 1.3em;
+        font-size: 1.5em;
         line-height: 1.8em;
     }
 
     .testimonial-text{
         font-size: 1.5em;
         line-height: 1.8em;
+    }
+
+    .heading-footer{
+        font-size:1.6em;
+    }
+
+    .heading-footer-detail{
+        font-size:1.3em;
+    }
+
+    .copyrights p{
+        font-size:1.2em;
     }
 }
