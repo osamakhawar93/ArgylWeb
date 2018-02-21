@@ -23,7 +23,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/a.ico" />
+  <link rel="shortcut icon" href="img/a.ico" width="16px"/>
+  <link href="css/toastr.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -143,9 +144,13 @@
             <br>
             <span class="diff-color">Argyle</span>
           </h3>
-          <p class="description">Argyle coin is an innovative and disruptive ICO that aims to provide secure, tangible and realistic returns on
-            any investment. Argyle Coin is designed to strike a balance between investment and returns. Argyle coin is backed
-            by tangible assets making </p>
+          <p class="description">Argyle coin is the culmination and combination of cutting edge blockchain technology, three generations of experience
+            in the Diamond Industry, and the need of a Crypto-currency with a real, tangible value. Created for investment
+            and commerce, it also shines as an alternative for anyone to create and amass wealth, securely and safely. With
+            so many Alternative Coins (Alt-Coins) emerging vying for your attention to invest in, Argyle sets the bar high
+            on the definition, use, and utility of a Crypto-Currency. No speculation to sway your decision on growth, Argyle
+            Coin is exploding in 2018 as the most disruptive Alternative Coin in the world. The first completed Crypto-Currency
+            to achieve this result, Argyle Coin lis projected instant and stellar returns.</p>
         </div>
 
 
@@ -176,15 +181,17 @@
       <div class="row just-text">
         <div class="col-md-6">
           <p class='column-text'>
-            Argyle Coin is a unique coin. Many have attempted to bring an Alt Coin to Market and come up short. Argyle Coin dispenses
-            with previously failed methods at bringing a alt coin product to the market whereas most coin offering boast
-            about creating a final product after the initial offering. Argyle has already created the technology and the
-            product prior to conducting its ICO.
+            Argyle Coin is the First Crypto-Currency Backed By A Hard Asset in colored diamonds. It's worth correlated with Fancy Colored
+            Diamonds, an Asset that has increased exponentially in worth due to real world scarcity and Consumer demand.
+            Prized around the World, Fancy
           </p>
         </div>
         <div class="col-md-6">
-          <p class='column-text'>Investing early with Argyle Coin ensures your pricing at first issue. This value of the coin will only increase
-            over time as Argyle Coins have a tangible underlying asset at its core that can be redeemed.</p>
+          <p class='column-text'>
+            Colored Diamonds have been a long time favorite of Investors for being Portable Wealth. The results for you owning Argyle
+            Coin are many. A stable Alt-Coin, with a guaranteed value, and exponential growth with Argyle Coin Mining and
+            Direct Marketing Programs.
+          </p>
         </div>
       </div>
     </div>
@@ -452,13 +459,26 @@
 
         <div class='subscription-form'>
           <div class="form-group">
-            <input type="text" class="form-control custom-inputs" id="" placeholder="Your Name">
+            <input type="text" class="form-control custom-inputs" id="s-name" placeholder="Your Name">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control custom-inputs" id="" placeholder="Your Email">
+            <input onkeydown="keyDownFunction(event)" type="text" class="form-control custom-inputs" id="s-email" placeholder="Your Email">
+          </div>
+          <div class="loader">
+            <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(1 1)" stroke-width="2">
+                  <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                  <path d="M36 18c0-9.94-8.06-18-18-18">
+                    <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"
+                    />
+                  </path>
+                </g>
+              </g>
+            </svg>
           </div>
           <div class="form-group">
-            <button class='updated'>Keep me updated</button>
+            <button class='updated' onclick="subscribe()">Keep me updated</button>
           </div>
         </div>
       </div>
@@ -467,7 +487,7 @@
   </section>
 
 
- <!--  <section class="token-sale-stages" id="token-sale">
+  <!--  <section class="token-sale-stages" id="token-sale">
 
 
     <div class="row">
@@ -930,22 +950,22 @@
 
             </div>
 
-       
+
 
             <div class="row">
 
               <div class="ios-button">
-                  <a href="http://35.227.40.51/Argyle-win32-ia32.zip" target="_blank">
-                <div class="left-icon">
-                  <img src="img/windows.png" width="30px" style="margin-top: 10px;">
-                </div>
-                <div class="right-name">
-                  <p>Windows</p>
-                </div>
+                <a href="http://35.227.40.51/Argyle-win32-ia32.zip" target="_blank">
+                  <div class="left-icon">
+                    <img src="img/windows.png" width="30px" style="margin-top: 10px;">
+                  </div>
+                  <div class="right-name">
+                    <p>Windows</p>
+                  </div>
                 </a>
               </div>
 
-              
+
 
 
             </div>
@@ -954,17 +974,17 @@
             <div class="row">
 
               <div class="ios-button">
-                  <a href="http://35.227.40.51/Argyle-linux-x64.zip" target="_blank">
-                <div class="left-icon">
-                  <img src="img/linux.png" width="30px" style="margin-top: 10px;">
-                </div>
-                <div class="right-name">
-                  <p>Linux</p>
-                </div>
+                <a href="http://35.227.40.51/Argyle-linux-x64.zip" target="_blank">
+                  <div class="left-icon">
+                    <img src="img/linux.png" width="30px" style="margin-top: 10px;">
+                  </div>
+                  <div class="right-name">
+                    <p>Linux</p>
+                  </div>
                 </a>
               </div>
 
-              
+
 
 
             </div>
@@ -973,20 +993,20 @@
 
               <div class="ios-button">
                 <a href="http://35.227.40.51/Argyle-darwin-x64.zip" target="_blank">
-              
-                <div class="left-icon">
-                  <img src="img/mac.png" width="30px" style="margin-top: 10px;">
-                </div>
-                <div class="right-name">
-                  <p>MAC</p>
-                </div>
+
+                  <div class="left-icon">
+                    <img src="img/mac.png" width="30px" style="margin-top: 10px;">
+                  </div>
+                  <div class="right-name">
+                    <p>MAC</p>
+                  </div>
                 </a>
               </div>
 
 
             </div>
 
-           
+
 
 
           </div>
@@ -994,7 +1014,7 @@
 
         </div>
 
-        
+
 
       </div>
 
@@ -1150,13 +1170,13 @@
           <li onclick="testimonialBy(1)" id="testimonialBy1">
             <img class='testimonial-small-img' src="img/larki1.png">
           </li>
-          <li onclick="testimonialBy(2)"  id="testimonialBy2">
+          <li onclick="testimonialBy(2)" id="testimonialBy2">
             <img class='testimonial-small-img' src="img/larki2.png">
           </li>
-          <li onclick="testimonialBy(3)"  id="testimonialBy3">
+          <li onclick="testimonialBy(3)" id="testimonialBy3">
             <img class='testimonial-small-img' src="img/hill.png">
           </li>
-          <li onclick="testimonialBy(4)"  id="testimonialBy4">
+          <li onclick="testimonialBy(4)" id="testimonialBy4">
             <img class='testimonial-small-img' src="img/uncle2.png">
           </li>
         </ul>
@@ -1164,6 +1184,138 @@
       </div>
 
 
+
+
+    </div>
+  </section>
+
+  <section class="faqs">
+
+    <div class="container">
+      <div class="clearfix">
+        <h3 class="question-heading whiteColored">Frequently Asked
+          <br>
+          <span class="diff-color2">Questions</span>
+        </h3>
+      </div>
+      <div class="accordion">
+        <dl>
+          <dt>
+            <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">What is block chain and what is cryptocurrency? Is there a difference?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+            <p>Blockchain is the disruptive technology that is cryptocurrency. Cryptocurrency is virtual money based in cryptographic,
+              mathematical algorithms and proof of work/stake</p>
+          </dd>
+          <dt>
+            <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+              What makes Argyle Coin Differenrt?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+            <p>Argyle Coin was built on a private Blockchain, and rather than speculation to give it value, Argyle Coin is backed
+              up by $25,000,000.00 worth of Fancy Colored Diamonds.</p>
+          </dd>
+          <dt>
+            <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+              Why has block chain and cryptocurrency become so popular?
+            </a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+            <p>Crypto currencies are not subject to inflation. Crypto currency is less expensive to transact and no need of
+              a middle man or third party. Al transactions are peer to peer. Loss of trust with financial institutions have
+              accelerated the acceptance.</p>
+          </dd>
+          <dt>
+            <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">What is block chain and what is cryptocurrency? Is there a difference?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+            <p>Blockchain is the disruptive technology that is cryptocurrency. Cryptocurrency is virtual money based in cryptographic,
+              mathematical algorithms and proof of work/stake</p>
+          </dd>
+          <dt>
+            <a href="#accordion6" aria-expanded="false" aria-controls="accordion6" class="accordion-title accordionTitle js-accordionTrigger">How many people are currently involved in cryptocurrency and will interest keep rising?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+            <p>Over 18 million Bitcoin wallets and at least the same again in other crypto currencies. Every day new and new
+              people are moving over to Crypto currencies.</p>
+          </dd>
+          <dt>
+            <a href="#accordion7" aria-expanded="false" aria-controls="accordion7" class="accordion-title accordionTitle js-accordionTrigger">How many people are currently involved in cryptocurrency and will interest keep rising?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+            <p>Over 18 million Bitcoin wallets and at least the same again in other crypto currencies. Every day new and new
+              people are moving over to Crypto currencies.</p>
+          </dd>
+          <dt>
+            <a href="#accordion8" aria-expanded="false" aria-controls="accordion8" class="accordion-title accordionTitle js-accordionTrigger">How safe is block chain?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion8" aria-hidden="true">
+            <p>Blockchain is extremely secure. It is easier to count all the rice grains that has ever been in existence than
+              it is to hack block chain.</p>
+          </dd>
+          <dt>
+            <a href="#accordion9" aria-expanded="false" aria-controls="accordion9" class="accordion-title accordionTitle js-accordionTrigger">How safe is block chain?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion9" aria-hidden="true">
+            <p>Blockchain is extremely secure. It is easier to count all the rice grains that has ever been in existence than
+              it is to hack block chain.</p>
+          </dd>
+          <dt>
+            <a href="#accordion10" aria-expanded="false" aria-controls="accordion10" class="accordion-title accordionTitle js-accordionTrigger">What is the difference between cryptocurrency and the money in my wallet?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion10" aria-hidden="true">
+            <p>Crypto currency value does not rely on fiat currency from any country or Central Bank. There aren’t any quantitative
+              easing and filing value over time on Crypto currency.</p>
+          </dd>
+          <dt>
+            <a href="#accordion11" aria-expanded="false" aria-controls="accordion11" class="accordion-title accordionTitle js-accordionTrigger">Will Cryptocurrency overtake money as we know it?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion11" aria-hidden="true">
+            <p>In a word, Yes. As Crypto currency becomes more mainstream, acceptance will continually grow. Cash transaction
+              today are disappearing, hastening the growth of Crypto currency.</p>
+          </dd>
+          <dt>
+            <a href="#accordion12" aria-expanded="false" aria-controls="accordion12" class="accordion-title accordionTitle js-accordionTrigger">What is an e-wallet?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion12" aria-hidden="true">
+            <p>Software that allows crypto coins to be used in transactions. Wallets do not store them. A crypto wallet (ie.
+              Ledger Naon, BLue), or cold storage.</p>
+          </dd>
+          <dt>
+            <a href="#accordion13" aria-expanded="false" aria-controls="accordion13" class="accordion-title accordionTitle js-accordionTrigger">Where can I spend my cryptocurrency?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion13" aria-hidden="true">
+            <p>Exchanges will take your coin, convert to Bitcoin Ethereum, or cash.</p>
+          </dd>
+          <dt>
+            <a href="#accordion14" aria-expanded="false" aria-controls="accordion14" class="accordion-title accordionTitle js-accordionTrigger">How can I use my Argyle Coin?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion14" aria-hidden="true">
+            <p>Using our Argyle Wallets.</p>
+          </dd>
+          <dt>
+            <a href="#accordion15" aria-expanded="false" aria-controls="accordion15" class="accordion-title accordionTitle js-accordionTrigger">Do I need to pay Taxes on any gains made?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion15" aria-hidden="true">
+            <p>Yes IRS treats any gains from any source in exactly the same way. Around 1000 people in the USA paid tax on their
+              Bitcoin earnings last year.</p>
+          </dd>
+          <dt>
+            <a href="#accordion16" aria-expanded="false" aria-controls="accordion16" class="accordion-title accordionTitle js-accordionTrigger">Can I leave cryptocurrency in my Will?</a>
+          </dt>
+          <dd class="accordion-content accordionItem is-collapsed" id="accordion16" aria-hidden="true">
+            <p>Yes you can. Ensure you passcodes are securely passed on.</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="news-images">
+
+    <div class="container">
       <div class="row news">
         <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 align-left guard">
           <img src="img/guard.png">
@@ -1180,12 +1332,10 @@
           <img src="img/newyork.png">
         </div>
       </div>
-
     </div>
+
+
   </section>
-
-
-
 
   <section class="footer-end">
 
@@ -1215,23 +1365,37 @@
           <div class="icon-row contact-form">
 
             <div class="form-group">
-              <input type="text" class="form-control custom-inputs" id="" placeholder="Your Name">
+              <input type="text" class="form-control custom-inputs" id="c-name" placeholder="Your Name">
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control custom-inputs" id="" placeholder="Your Email">
+              <input type="text" class="form-control custom-inputs" id="c-email" placeholder="Your Email">
             </div>
 
             <div class="form-group">
-              <input type="text" class="form-control custom-inputs" id="" placeholder="Subject">
+              <input type="text" class="form-control custom-inputs" id="c-subject" placeholder="Subject">
             </div>
 
             <div class="form-group">
-              <textarea placeholder="Message"></textarea>
+              <textarea id="c-message"  onkeydown="keyDownForContact(event)" placeholder="Message"></textarea>
+            </div>
+
+            <div class="loader2">
+              <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(1 1)" stroke-width="2">
+                    <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+                    <path d="M36 18c0-9.94-8.06-18-18-18">
+                      <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"
+                      />
+                    </path>
+                  </g>
+                </g>
+              </svg>
             </div>
 
             <div class="form-group">
-              <button class="btn submit">Submit</button>
+              <button class="btn submit contact-btn-bottom" onclick="contact()">Submit</button>
             </div>
 
 
@@ -1266,7 +1430,7 @@
           </div>
 
 
-          <div class='one-row'>
+          <div class='one-row connect-div'>
             <hr class="white-hr">
             <div class="clear"></div>
             <p class="heading-footer">Connect</p>
@@ -1286,7 +1450,7 @@
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
-              <li class="plus"  data-aos="fade-down">
+              <li class="plus" data-aos="fade-down">
                 <a href="#">
                   <i class="fa fa-google-plus"></i>
                 </a>
@@ -1339,7 +1503,10 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
   <script src="vendor/bootstrap/js/custom.js"></script>
+
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="js/toastr.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
