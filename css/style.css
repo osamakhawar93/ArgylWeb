@@ -729,6 +729,26 @@ textarea{
     font-family: 'ralewayregular';
 }
 
+.ok-image{
+    background-image:url('../img/ok.JPG');
+    background-size:cover;
+}
+
+.sj-image{
+    background-image:url('../img/sajjad.JPG');
+    background-size:cover;
+}
+
+.az-image{
+    background-image:url('../img/alibhai.JPG');
+    background-size:cover;
+}
+
+.t-image{
+    background-image:url('../img/talha.JPG');
+    background-size:cover;
+}
+
 #first,#second,#third,#fourth,#fifth{
   /*   opacity: 0; */
 }
@@ -992,7 +1012,7 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
     width: 250px;
     height: 270px;
-    box-shadow: none;
+    box-shadow: 5.657px 5.657px 6px 0px rgba(0, 0, 0, 0.13);
     transition: box-shadow 0.3s ease-in-out;
 }
 
